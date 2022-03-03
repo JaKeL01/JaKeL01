@@ -1,0 +1,25 @@
+﻿!\\Mar 03 2022 - changed to chromium, removed ie9, added script error suppression, changed homepage to blank
+!\\Oct 22 2021 - Added spool directory
+!\\Feb 9  2021 - Updated material directory; comment out mdl tree config
+!\\Jan 21 2020
+
+pro_group_dir \\SBLPWIC01\engineering\ptc\standards\groups
+pro_symbol_dir \\SBLPWIC01\engineering\ptc\standards\symbols
+pro_library_dir \\SBLPWIC01\engineering\ptc\standards\library
+pro_note_dir \\SBLPWIC01\engineering\ptc\standards\NOTES
+pro_spool_dir \\SBLPWIC01\engineering\ptc\standards\library\Cabling\wire_spools
+symbol_instance_palette_file \\SBLPWIC01\engineering\ptc\standards\creo\symbols\symbols.drw
+drawing_setup_file \\SBLPWIC01\engineering\ptc\standards\configs\metric.dtl
+pro_format_dir wtpub://Windchill/Libraries/CAD Administration/Formats
+pro_material_dir \\SBLPWIC01\engineering\ptc\standards\materials
+start_model_dir \\SBLPWIC01\engineering\ptc\standards\start_files
+template_solidpart \\SBLPWIC01\engineering\ptc\standards\start_files\start_part_mm.prt
+template_designasm \\SBLPWIC01\engineering\ptc\standards\creo\start_files\start_assy_mm.asm
+pro_plot_config_dir \\SBLPWIC01\engineering\ptc\standards\plotting
+pen_table_file \\SBLPWIC01\engineering\ptc\standards\plotting\pdf_maker.pnt
+
+!\\locked global config options
+pdf_use_pentable yes
+js_error_policy suppress_continue
+windows_browser_type chromium_browser
+web_browser_homepage about:blank
