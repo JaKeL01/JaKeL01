@@ -10,10 +10,10 @@
 
 
 ECHO OFF
-COLOR 8
+COLOR 7
 
 :: Copy 7060_Reload.bat
-xcopy /s/e/y "\\1\Engineering\PTC\Config_beta\7060_Reload.bat" "C:\Program Files\PTC\Creo 7.0.6.0\Parametric\bin\"
+xcopy /s/e/y "\\SBLPWIC011\Engineering\PTC\Config_beta\7060_Reload.bat" "C:\Program Files\PTC\Creo 7.0.6.0\Parametric\bin\"
 
 :: Copy PSF files to local
 xcopy /s/e/y "\\1\Engineering\PTC\Config\admin_C6\aa_basic.psf" "C:\Program Files\PTC\Creo 6.0.4.0\Parametric\bin\"
