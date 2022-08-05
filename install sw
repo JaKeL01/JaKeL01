@@ -1,0 +1,22 @@
+@echo off
+SET SERVER_PATH=%~dps0%
+echo %SERVER_PATH% | findstr /c:":" 1>nul
+
+for /f "tokens=1 delims=\" %%a in ("%SERVER_PATH%") do (
+  set SERVER_NAME=%%a
+  )
+
+if errorlevel 1 (
+  SET ENGINEERING_SHARE=\\%SERVER_NAME%\SOLIDWORKS_Admin
+
+) ELSE (
+  set ENGINEERING_SHARE=%SERVER_PATH%..\..\..\..\..
+)
+
+
+echo ENGINEERING_SHARE=%ENGINEERING_SHARE%
+
+
+
+"%ENGINEERING_SHARE%\SolidWorks2022SP2.0\64bit\sldim\sldim.exe" /adminclient /new /source "%ENGINEERING_SHARE%\SolidWorks2022SP2.0\64bit\AdminDirector.xml" /norunsw
+
