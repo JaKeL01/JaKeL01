@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<PRODUCT ARP="PTC Creo Common Files" banner="Creo" datecode="2019471" family="Creo" name="Creo Common Files" parentonly="Y" tag="creobase.xml" version="6.0.4.0">
+  <PROPERTIES>
+    <PROPERTY name="installdir">[PROGRAMFILES]/PTC</PROPERTY>
+    <PROPERTY name="cachedir">[APPLICATIONDATA]/PTC Download/[MEDIAID]</PROPERTY>
+    <PROPERTY name="[INSTALLBASE]">C:\Program Files\PTC</PROPERTY>
+    <PROPERTY name="[COMMONFILESNAME]">Common Files</PROPERTY>
+    <PROPERTY name="[CREOCOMMONFILES]">[INSTALLBASE]/Creo [VERSION]/[COMMONFILESNAME]</PROPERTY>
+    <PROPERTY name="[LP]">[CREOCOMMONFILES]</PROPERTY>
+    <PROPERTY name="[OLDSHIPCODE]">OLD</PROPERTY>
+  	<PROPERTY name="[OLDVERSION]">OLD</PROPERTY>
+    <PROPERTY name="[OLDCREOCOMMONFILES]">[INSTALLBASE]/[OLDVERSION]/[COMMONFILESNAME]</PROPERTY>
+    <PROPERTY name="[OLDLP]">[OLDCREOCOMMONFILES]</PROPERTY>
+    <PROPERTY name="[Update MOR PATH]">[INSTALLBASE]/[OLDVERSION]</PROPERTY>
+    <PROPERTY name="latestSideUpdate">true</PROPERTY>
+	  <PROPERTY name="[ICON]">[LP]/[THIS_ARCH]/obj/creologo.ico</PROPERTY>
+	  <PROPERTY name="[OpenWith]">Open With a Creo App</PROPERTY>
+	  <PROPERTY name="[PIM_DLL_PATH]">[INSTALLBASE]/Creo [VERSION]/InstallManager</PROPERTY>
+    <PROPERTY name="CustomActions">true</PROPERTY>
+    <PROPERTY name="NoUninstallEntry"/>
+    <PROPERTY name="NoServices"/>
+    <PROPERTY name="NoShortcuts"/>
+    <PROPERTY name="NoPSF"/>
+   	<PROPERTY name="ToolTip">Location of shared installation files.</PROPERTY>
+    <PROPERTY name="[PROGRAMFILES]">C:\Program Files</PROPERTY>
+    <PROPERTY name="[PROGRAMFILESx86]">C:\Program Files (x86)</PROPERTY>
+    <PROPERTY name="[APPLICATIONDATA]">C:\Users\admin\AppData\Roaming</PROPERTY>
+    <PROPERTY name="[APPLICATIONDATA_ALLUSERS]">C:\ProgramData</PROPERTY>
+    <PROPERTY name="[DOCUMENTS_ALLUSERS]">C:\Users\Public\Documents</PROPERTY>
+    <PROPERTY name="[DOCUMENTS_USER]">C:\Users\admin\Documents</PROPERTY>
+    <PROPERTY name="[PIM_LOG_ENV]">C:\Users\admin\Documents</PROPERTY>
+    <PROPERTY name="[VERSION]">6.0.4.0</PROPERTY>
+    <PROPERTY name="NoDownloadSupport">use_image</PROPERTY>
+    <PROPERTY name="[SOURCE]">\\dbmg0162\transfer\Creo installs\Sensata Creo Install 6.0.4.0\Sensata Creo Install 6.0.4.0\MED-100WIN-CD-430_6-0-4-0_Win64</PROPERTY>
+    <PROPERTY name="localhost.msi.version">5.0</PROPERTY>
+    <PROPERTY install="Y" name="InstallMe"/>
+    <PROPERTY name="UI_started">Y</PROPERTY>
+    <PROPERTY name="status_message">Installing...</PROPERTY>
+  </PROPERTIES>
+  
+
+
+
+  <!-- Distribution could be local disk, web, or in the future maybe ftp? -->
+  <DISTRIBUTION from="">
+    <LANGUAGES>
+      <LANGUAGE install="Y" installed="N" name="usascii" required="Y">English</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="french">French</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="german">German</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="italian">Italian</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="spanish">Spanish</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="japanese">Japanese</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="korean">Korean</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="chinese_cn">Chinese simplified</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="chinese_tw">Chinese traditional</LANGUAGE>
+      <LANGUAGE install="N" installed="N" name="russian">Russian</LANGUAGE>
+  	  <LANGUAGE install="N" installed="N" name="portuguese_br">Brazilian Portuguese </LANGUAGE>
+
+    </LANGUAGES>
+    <PLATFORMS>
+      
+      <PLATFORM install="Y" installed="N" name="x86e_win64">Windows 64 bit</PLATFORM>
+    </PLATFORMS>
+    <PACKAGES>
+      <PACKAGE hidden="N" install="Y" installed="N" label="Creo Common Files" name="creo_base" parent="" required="Y">
+        <FEATURE>creo_text_tree</FEATURE>
+        <FEATURE>creo_text_tree_piping</FEATURE>
+        <FEATURE>creo_text_misc</FEATURE>
+    
+    
+    <!--    <FEATURE>creo_uitools_res</FEATURE> -->
+        <FEATURE>creo_res</FEATURE>
+        <FEATURE>creo_pv</FEATURE>
+        <FEATURE>creo_cetol</FEATURE>
+        <FEATURE>creo_nms</FEATURE>
+        <FEATURE>creo_gplugs</FEATURE>
+        <FEATURE>creo_symbols</FEATURE>
+        <FEATURE>creo_lib</FEATURE>
+        <FEATURE>creo_obj</FEATURE>
+        <FEATURE>creo_obj_extensions</FEATURE>
+      
+  
+      <!--   <FEATURE>creo_mdl_templates</FEATURE> -->
+        <FEATURE>creo_graphic_lib</FEATURE>
+        <FEATURE>creo_manikin_lite</FEATURE>
+        <FEATURE>creo_landing</FEATURE>
+         <FEATURE>dsq</FEATURE> 
+        <FEATURE>dbatchs</FEATURE>
+     
+  
+      <!--   <FEATURE>flexclient</FEATURE> -->
+        <FEATURE>iculibs</FEATURE>
+        <FEATURE>Mozilla</FEATURE>
+        <FEATURE>introfiles</FEATURE>
+        <FEATURE>pro_from_cptr</FEATURE>
+        <FEATURE>pro_to_cat</FEATURE>
+        <FEATURE>pro_from_feas</FEATURE>
+        <FEATURE>procgi</FEATURE>
+        <FEATURE>Demos</FEATURE>
+        <FEATURE>proappt</FEATURE>
+        <FEATURE>ncexpert</FEATURE>
+        <FEATURE>weld_data</FEATURE>
+        <FEATURE>mechanism</FEATURE>
+        <FEATURE>animation</FEATURE>
+        <FEATURE>creo_harness_mfg</FEATURE>
+        
+
+        <!-- install/addons MSI file -->
+      
+  
+      <!--  <FEATURE>creoagent</FEATURE> -->
+        <FEATURE>thumbviewer</FEATURE>
+        <FEATURE>cevexpress</FEATURE>
+        <SCRIPT dest="[LP]/i486_nt/obj/system_monitor.bat" name="system_monitor" platform="i486_nt" source="creo_templates.xml"/>
+        <SCRIPT dest="[LP]/x86e_win64/obj/system_monitor.bat" installed="Y" name="system_monitor" platform="x86e_win64" source="creo_templates.xml"/>
+		      <SCRIPT dest="[PIM_DLL_PATH]/silent_Group_Uninstall.bat" installed="Y" name="silentGroupUninstall" source="creo_templates.xml"/>
+      </PACKAGE>
+	     <PACKAGE hidden="N" install="Y" installed="N" label="Creo Engine Common Files" name="creo_shell" parent="" required="Y">
+		      <FEATURE location="[CREOCOMMONFILES]">creo_text_tree_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_lib_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_obj_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_pv_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_res_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creoagent_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_mdl_templates_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_text_misc_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_uitools_res_creo_shell</FEATURE>		
+		      <FEATURE location="[CREOCOMMONFILES]">dsq_creo_shell</FEATURE>	
+		      <FEATURE location="[CREOCOMMONFILES]">flexclient_creo_shell</FEATURE>		
+		      <FEATURE location="[CREOCOMMONFILES]">creo_obj_extensions_creo_shell</FEATURE>
+		      <FEATURE location="[CREOCOMMONFILES]">creo_graphic_lib_creo_shell</FEATURE>
+		
+	   </PACKAGE>
+    </PACKAGES>
+    <CDSECTION install="Y" installed="Y" name="procgi" platform="x86e_win64" size="3577856">ptc0.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="pro_from_feas" platform="x86e_win64" size="12219349">ptc1.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="pro_from_cptr" platform="x86e_win64" size="17073664">ptc2.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_text_tree" size="22234839">ptc3.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_text_tree" size="24864501">ptc4.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_text_tree" size="36728637">ptc5.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_text_tree" size="1552213">ptc6.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_text_tree" size="1877163">ptc7.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_text_tree" size="79870">ptc8.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_text_tree_piping" size="14801381">ptc9.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_text_tree_creo_shell" size="117890063">ptc10.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_text_misc" size="4123279">ptc11.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_text_misc" size="1896685">ptc12.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_text_misc" size="1899462">ptc13.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_text_misc" size="1906852">ptc14.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_text_misc" size="1907942">ptc15.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_text_misc" size="1919147">ptc16.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_text_misc" size="1920495">ptc17.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="creo_text_misc" size="43847">ptc18.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_text_misc" size="1914652">ptc19.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_text_misc" size="1912774">ptc20.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_text_misc" size="1915871">ptc21.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_text_misc_creo_shell" size="3944442">ptc22.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="Demos" size="1338472">ptc23.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="proappt" size="62642">ptc24.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="ncexpert" size="1689497">ptc25.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="10069869">ptc26.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="964755">ptc27.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="941862">ptc28.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1018313">ptc29.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="980116">ptc30.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1030506">ptc31.cab</CDSECTION>
+    <CDSECTION install="N" language="french" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1016361">ptc32.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="160873">ptc33.cab</CDSECTION>
+    <CDSECTION install="N" language="german" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1020367">ptc34.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1014848">ptc35.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" location="[CREOCOMMONFILES]" name="creo_uitools_res_creo_shell" size="1027396">ptc36.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_res" size="8502266">ptc37.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_res" size="25377107">ptc38.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_res" size="30901647">ptc39.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_res" size="27565022">ptc40.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_res" size="21970935">ptc41.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_res" size="23595127">ptc42.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_res" size="22763969">ptc43.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="creo_res" size="21179978">ptc44.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_res" size="21761737">ptc45.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_res" size="21632927">ptc46.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_res" size="22131807">ptc47.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4447650">ptc48.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="8836004">ptc49.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="11778952">ptc50.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4218184">ptc51.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="3618414">ptc52.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="3701702">ptc53.cab</CDSECTION>
+    <CDSECTION install="N" language="french" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4394262">ptc54.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4267308">ptc55.cab</CDSECTION>
+    <CDSECTION install="N" language="german" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4259250">ptc56.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4367098">ptc57.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" platform="x86e_win64" size="4468152">ptc58.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="38131744">ptc59.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="336388">ptc60.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="333182">ptc61.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="381638">ptc62.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="357466">ptc63.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="381160">ptc64.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="313136">ptc65.cab</CDSECTION>
+    <CDSECTION install="N" language="french" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="376109">ptc66.cab</CDSECTION>
+    <CDSECTION install="N" language="german" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="359092">ptc67.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="361915">ptc68.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" location="[CREOCOMMONFILES]" name="creo_res_creo_shell" size="369190">ptc69.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_pv" size="4624039">ptc70.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_pv" platform="x86e_win64" size="18258432">ptc71.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_pv_creo_shell" size="3383168">ptc72.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_pv_creo_shell" platform="x86e_win64" size="122584752">ptc73.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_cetol" platform="x86e_win64" size="139945">ptc74.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_cetol" platform="x86e_win64" size="22962">ptc75.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_cetol" platform="x86e_win64" size="22978">ptc76.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_cetol" platform="x86e_win64" size="27219">ptc77.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_cetol" platform="x86e_win64" size="26503">ptc78.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_cetol" platform="x86e_win64" size="26430">ptc79.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_cetol" platform="x86e_win64" size="25540">ptc80.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_cetol" platform="x86e_win64" size="24417">ptc81.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_cetol" platform="x86e_win64" size="27262">ptc82.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_cetol" platform="x86e_win64" size="31332">ptc83.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_nms" platform="x86e_win64" size="26725376">ptc84.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_lib" platform="x86e_win64" size="614326942">ptc85.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_lib_creo_shell" platform="x86e_win64" size="291995677">ptc86.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_obj" platform="x86e_win64" size="638066560">ptc87.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_obj_creo_shell" platform="x86e_win64" size="501800189">ptc88.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_obj_extensions" platform="x86e_win64" size="168296513">ptc90.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_obj_extensions_creo_shell" platform="x86e_win64" size="46043136">ptc91.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_mdl_templates_creo_shell" size="14045977">ptc113.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_graphic_lib" size="261537832">ptc116.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creo_graphic_lib_creo_shell" size="52574">ptc117.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_manikin_lite" size="16635652">ptc118.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_symbols" size="2048647">ptc119.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="flexclient_creo_shell" size="54652">ptc123.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="flexclient_creo_shell" platform="x86e_win64" size="9032168">ptc124.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="weld_data" size="37027">ptc126.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="mechanism" size="1399708">ptc140.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="mechanism" size="1084548">ptc141.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="mechanism" size="1193463">ptc142.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="mechanism" size="1411036">ptc143.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="mechanism" size="1349592">ptc144.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="mechanism" size="1228768">ptc145.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="mechanism" size="1470723">ptc146.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="mechanism" size="1232735">ptc147.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="mechanism" size="1264640">ptc148.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="mechanism" size="1981838">ptc149.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="mechanism" size="1238186">ptc150.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="mechanism" platform="x86e_win64" size="30945071">ptc151.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="animation" size="1431664">ptc152.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="animation" size="1124988">ptc153.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="animation" size="1234024">ptc154.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="animation" size="1454234">ptc155.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="animation" size="1392326">ptc156.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="animation" size="1271670">ptc157.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="animation" size="1516801">ptc158.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="animation" size="1276717">ptc159.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="animation" size="1304197">ptc160.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="animation" size="2030681">ptc161.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="animation" size="1281495">ptc162.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="animation" platform="x86e_win64" size="32561823">ptc163.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="dsq" size="248901">ptc188.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="dsq" size="157006">ptc193.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="dsq" size="129717">ptc194.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="dsq" size="129683">ptc196.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="dsq" size="140237">ptc198.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="dsq" size="138633">ptc199.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="dsq" size="136492">ptc201.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="dsq" size="135978">ptc203.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="dsq" size="144710">ptc205.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="dsq" size="135263">ptc207.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="dsq" size="138793">ptc209.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="dsq" platform="x86e_win64" size="43011768">ptc229.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="dbatchs" platform="x86e_win64" size="19272192">ptc231.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="dsq_creo_shell" size="3745792">ptc238.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_landing" size="53665489">ptc250.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_landing" size="51578169">ptc251.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_landing" size="51242187">ptc252.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_landing" size="48862670">ptc253.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_landing" size="50620063">ptc254.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_landing" size="50857872">ptc255.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_landing" size="53331974">ptc256.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_landing" size="50030001">ptc257.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_landing" size="56145445">ptc258.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_landing" size="55557760">ptc259.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="creo_landing" size="49113890">ptc260.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" location="[CREOCOMMONFILES]" name="creoagent_creo_shell" size="5183">ptc293.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="iculibs" platform="x86e_win64" size="32591872">ptc298.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_harness_mfg" size="36839690">ptc317.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_harness_mfg" size="40270">ptc318.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_harness_mfg" size="40730">ptc319.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_harness_mfg" size="46376">ptc320.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_harness_mfg" size="46900">ptc321.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_harness_mfg" size="46458">ptc322.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_harness_mfg" size="51758">ptc323.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_harness_mfg" size="47962">ptc324.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_harness_mfg" size="45608">ptc325.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_harness_mfg" size="57800">ptc326.cab</CDSECTION>
+    <CDSECTION install="Y" installed="Y" name="creo_harness_mfg" platform="x86e_win64" size="15276544">ptc328.cab</CDSECTION>
+    <CDSECTION install="N" language="german" name="creo_cetol" size="164575">ptc380.cab</CDSECTION>
+    <CDSECTION install="N" language="french" name="creo_cetol" size="168023">ptc381.cab</CDSECTION>
+    <CDSECTION install="N" language="italian" name="creo_cetol" size="167370">ptc382.cab</CDSECTION>
+    <CDSECTION install="N" language="japanese" name="creo_cetol" size="160452">ptc383.cab</CDSECTION>
+    <CDSECTION install="N" language="korean" name="creo_cetol" size="156351">ptc384.cab</CDSECTION>
+    <CDSECTION install="N" language="russian" name="creo_cetol" size="179472">ptc385.cab</CDSECTION>
+    <CDSECTION install="N" language="spanish" name="creo_cetol" size="170232">ptc386.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_cn" name="creo_cetol" size="150106">ptc387.cab</CDSECTION>
+    <CDSECTION install="N" language="chinese_tw" name="creo_cetol" size="151429">ptc388.cab</CDSECTION>
+    <CDSECTION install="N" language="portuguese_br" name="creo_cetol" size="167805">ptc389.cab</CDSECTION>
+  </DISTRIBUTION>
+  <REGISTRY>
+    <VALUE default="phwFile" id=".phw" installed="Y" key="[HKCR]"/>
+	  <VALUE default="PTC Helper App File" id="phwFile" installed="Y" key="[HKCR]"/>
+    <VALUE default="[ICON],0" id="DefaultIcon" installed="Y" key="[HKCR]phwFile"/>
+    <VALUE default="" id="Shell" installed="Y" key="[HKCR]phwFile"/>
+    <VALUE default="[OpenWith]" id="Open" installed="Y" key="[HKCR]phwFile/Shell"/>
+    <VALUE default="&quot;[LP]/[THIS_ARCH]/obj/creo_openwith.exe&quot; &quot;%1&quot;" id="Command" installed="Y" key="[HKCR]phwFile/Shell/Open"/>
+  </REGISTRY>
+  
+  <CUSTOM_ACTION dest="[LP]/creo_standards" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/demos" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/CustomLoad" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/formats" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/graphic-library" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/intudfs" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/manikin_lite" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/mfg_cmdsyn" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/mfg_cmdsyn_ai" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/symbols" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/tol_tables" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/aec_data" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/annot_plane" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/bend_tables" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/cabling_data" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/center_drills" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/crosshatch" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/drills" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/fonts" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/hole" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/intf_configs" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/lattice_template" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/materials-library" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/ncmdl_data" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/piping_data" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/plot_config" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/probes" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/render" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/sketcher_palette" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smm_parts" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smm_tools" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smt" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smt_clamps" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/table" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/xsec_xhatch" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/3d-printing-materials" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.pro" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.sup" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.win" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/menu_def.pro" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.abz" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_direct_admin_customization.ui" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_optm_admin_customization.ui" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_parametric_admin_customization.ui" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_layout_admin_customization.ui" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_simulate_admin_customization.ui" dll="" location="[CREOCOMMONFILES]" name="BackupFile" when="PreInstall"/>  
+  
+  <CUSTOM_ACTION dest="[LP]/creo_standards" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/demos" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/CustomLoad" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/formats" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/graphic-library" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/intudfs" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/manikin_lite" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/mfg_cmdsyn" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/mfg_cmdsyn_ai" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/symbols" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/tol_tables" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/aec_data" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/annot_plane" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/bend_tables" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/cabling_data" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/center_drills" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/crosshatch" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/drills" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/fonts" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/hole" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/intf_configs" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/lattice_template" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/materials-library" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/ncmdl_data" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/piping_data" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/plot_config" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/probes" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/render" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/sketcher_palette" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smm_parts" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smm_tools" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smt" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/smt_clamps" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/table" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/xsec_xhatch" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/3d-printing-materials" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.pro" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.sup" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.win" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/menu_def.pro" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/config.abz" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_direct_admin_customization.ui" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_optm_admin_customization.ui" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_parametric_admin_customization.ui" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_layout_admin_customization.ui" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/text/creo_simulate_admin_customization.ui" dll="" location="[OLDCREOCOMMONFILES]" name="RestoreBackup" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/creoagent_32.msi" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/creoagent_32_64.msi" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/Thumbviewer_32.msi" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/Thumbviewer_32_64.msi" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/pvx32/CreoSetup.exe" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/install/addon/pvx32_64/CreoSetup.exe" dll="" name="SetFilePermissions" perm="RX" when="PostInstall"/>
+  <CUSTOM_ACTION dest="[LP]/../installManager/Uninstall_all_utilities.bat" dll="" name="ExecUtilitiesUninstallCmd" when="PreUninstall"/>
+
+
+</PRODUCT>
