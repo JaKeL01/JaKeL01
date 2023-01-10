@@ -1,0 +1,31 @@
+@ECHO OFF
+
+COLOR 2
+
+@ECHO -PLEASE WAIT-
+
+@ECHO -DO NOT CLOSE THIS WINDOW-
+
+@ECHO -THIS WINDOW WILL CLOSE ITSELF AFTER INSTALLATION-
+
+SET REMOTE_BASE=%~dps0%
+
+%REMOTE_BASE%setup.exe -xml "%REMOTE_BASE%xml6\creobase.p.xml"-xml "%REMOTE_BASE%xml6\pma.p.xml"-xml "%REMOTE_BASE%\xml6\sim.p.xml"
+
+robocopy "%REMOTE_BASE%OST" "C:\Program Files\PTC\Creo 6.0.4.0\Parametric\bin" *.bat
+
+robocopy "%REMOTE_BASE%OST" "C:\Users\Public\Desktop" *.lnk
+
+robocopy "%REMOTE_BASE%OST\creo6" C:\creo6 /e /xo
+
+robocopy "%REMOTE_BASE%OST\admin_c6" "C:\Program Files\PTC\Creo 6.0.4.0\Parametric\bin" *.psf
+
+robocopy "%REMOTE_BASE%OST\admin_c6" "C:\Program Files\PTC\Creo 6.0.4.0\Common Files\text" *.sup
+
+robocopy "%REMOTE_BASE%OST\admin_c6" "C:\Program Files\PTC\Creo 6.0.4.0\Common Files\text" *.pro
+
+@ECHO CREO HAS NOW BEEN INSTALLED. THIS WINDOW WILL CLOSE IN 20 SECONDS.
+
+@ECHO OFF
+
+TIMEOUT 90
