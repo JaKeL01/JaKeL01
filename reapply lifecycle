@@ -1,0 +1,26 @@
+# mode= REQUIRED. Values must be "report" or "reassign". report mode will inform object count details in source & target LCs which will be eligible for reassignment. reassign mode will perform actual LC reassign operation
+# containerOIDs= REQUIRED. The comma separated list of container oids. The eligible objects of the specified objectType will be processed for all these containers specified. Note: The comma separated list of container oids should not contain line breaks. e.g. wt.pdmlink.PDMLinkProduct:1234, wt.pdmlink.PDMLinkProduct:5678
+# objectType= REQUIRED. It specifies object class type for which LC reassign operation needs to be perform. e.g. wt.part.WTPart
+# sourceLC= REQUIRED. It specifies source life cycle name.
+# targetLC= REQUIRED. It specifies target life cycle name.
+# runTime= REQUIRED. It specifies utility run time in minutes. The value should be greater than 0(zero) or -1 if you want utility to run for infinite time i.e. till process all eligible objects.
+# preserveState= REQUIRED. It specifies whether to preserve state after reassigning LC. Values should be true or false.
+# cleanup= REQUIRED. It specifies whether to remove  entries from tables “Team, RolePrincipalMap, WTAclENTRY” associated with object after reassigning it from Advanced Lifecycle type to Basic Lifecycle. If "true" value is specified, cleanup is done otherwise cealnup is not done. Values should be true or false.
+# reassignObjectHavingProcessesStatus= REQUIRED. Performs reassign operation only for process of specified status. The value should be OPEN, CLOSED or ALL.
+# reassignObjectToTargetState= OPTIONAL. It specifies target state for reassignment. Target state should be present in target lifecycle and if it is defined, preserveState parameter will be invalid. Default value is NULL.
+# reassignObjectWhenCurrentStateSameAsTarget= OPTIONAL. It specifies that whether to perform reassign operation only when object currently in target state. It is only valid if reassignObjectToTargetState parameter define appropriately. Default value is false.
+# detailedLogging= OPTIONAL. Enabling this will print/log detailed logging else only essential. Values will be true or false. Default value will be false.
+# intermediateReportInterval= OPTIONAL. It specifies the interval in minutes of logging intermediate/progress LC Reassign report. The default value will be 0 mins i.e. no intermediate report.
+% includeSubType= OPTIONAL. It specifies whether to include subtype or not. Values will be true or false. Default value will be false.
+# The command to run the utility: java wt.lifecycle.utility.reassign.LCReassignUtility
+
+mode=report
+containerOIDs=
+objectType=wt.epm.EPMDocument
+sourceLC=
+targetLC=
+runTime=5
+preserveState=true
+cleanup=true
+reassignObjectHavingProcessesStatus=ALL
+
