@@ -15,11 +15,11 @@
 # The command to run the utility: java wt.lifecycle.utility.reassign.LCReassignUtility
 
 mode=report
-containerOIDs=
+containerOIDs=wt.pdmlink.PDMLinkProduct:51345, wt.pdmlink.PDMLinkProduct:51580, wt.pdmlink.PDMLinkProduct:51815, wt.pdmlink.PDMLinkProduct:52050, wt.pdmlink.PDMLinkProduct:80627972, wt.pdmlink.PDMLinkProduct:158065231, wt.pdmlink.PDMLinkProduct:52285, wt.pdmlink.PDMLinkProduct:26494770, wt.pdmlink.PDMLinkProduct:52520, wt.pdmlink.PDMLinkProduct:52755, wt.pdmlink.PDMLinkProduct:52990, wt.pdmlink.PDMLinkProduct:53225, wt.pdmlink.PDMLinkProduct:53460, wt.pdmlink.PDMLinkProduct:136517004, wt.pdmlink.PDMLinkProduct:54400, wt.pdmlink.PDMLinkProduct:73888501, wt.pdmlink.PDMLinkProduct:53695, wt.pdmlink.PDMLinkProduct:53930, wt.pdmlink.PDMLinkProduct:54165, wt.pdmlink.PDMLinkProduct:36190122
 objectType=wt.epm.EPMDocument
-sourceLC=
-targetLC=
-runTime=5
+sourceLC=DeltaTechControls
+targetLC=DeltaTechControls
+runTime=-1
 preserveState=true
 cleanup=true
 reassignObjectHavingProcessesStatus=ALL
