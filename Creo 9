@@ -1,0 +1,60 @@
+
+@echo off
+setlocal
+
+rem ====== USER-WRITABLE ROOTS (EDIT THESE) ======
+rem Keep everything under the user's profile or a user-writable network/OneDrive path.
+set "USER_ROOT=%USERPROFILE%\Creo"
+set "WORK_DIR=%USER_ROOT%\Work"                 rem Working dir for clutter/logs/trails
+set "SETTINGS_DIR=%USER_ROOT%\Settings"         rem Centralized config files (config.pro, etc.)
+set "CACHE_DIR=%USER_ROOT%\Cache"               rem Windchill / workspace caches
+set "AGENT_DIR=%USER_ROOT%\Agent"               rem Creo agent home (Windchill client)
+rem If you use a license server, set the correct port and host:
+rem Example: 7788@licserver; otherwise point to a local .dat or leave blank
+set "PTC_D_LICENSE_FILE=7788@licserver"
+
+rem ====== ENSURE FOLDERS EXIST ======
+for %%D in ("%WORK_DIR%" "%SETTINGS_DIR%" "%CACHE_DIR%" "%AGENT_DIR%") do (
+    if not exist "%%~D" mkdir "%%~D"
+)
+
+rem ====== ENVIRONMENT VARIABLES (USER-SCOPE) ======
+rem Send Windchill/Workspace caches to user-writable locations
+set "PTC_WF_ROOT=%CACHE_DIR%"           rem overrides default .wf location
+set "PTC_WF_CACHE=%CACHE_DIR%\_cache"   rem new workspaces go here
+set "PTC_WLD_ROOT=%CACHE_DIR%\_ws"      rem .ws location
+set "CREO_AGENT_HOME=%AGENT_DIR%"       rem agent files live here
+
+rem Centralize config files outside Program Files (CREO 9+ supports alt settings path)
+set "PTC_CREO_ALT_SETTINGS_PATH=%SETTINGS_DIR%"  rem reads config.pro, config.sup, admin UI, protk/prodev files
+
+rem Trail/log files must be writable—use temp or your work dir
+set "TEMP=%WORK_DIR%"
+set "TMP=%WORK_DIR%"
+
+rem Some integrations/tools look for trail_dir in config; we enforce via environment and Start In.
+rem If needed, also add: trail_dir $TEMP inside config.pro
+
+rem ====== OPTIONAL: COPY STANDARD CONFIGS FOR USERS ======
+rem If you keep master configs on a share, pull them down each launch:
+rem xcopy "\\YourShare\Creo\Settings" "%SETTINGS_DIR%" /E /I /Y
+
+rem ====== PICK YOUR LOADPOINT (READ-ONLY IS OK) ======
+rem Typical install path—do NOT write here. Only read/execute.
+set "CREO_BIN=C:\Program Files\PTC\Creo 11.0\Parametric\bin"
+if not exist "%CREO_BIN%\parametric.bat" (
+    echo ERROR: Creo loadpoint not found at "%CREO_BIN%". Edit CREO_BIN in this script.
+    exit /b 1
+)
+
+rem ====== START IN A CLEAN, USER-WRITABLE WORKING DIRECTORY ======
+cd /d "%WORK_DIR%"
+
+rem ====== (OPTIONAL) GRAPHICS-SUPPRESSED START FOR AUTOMATION ======
+rem Add -g:no_graphics to run headless for batch/Toolkit routines
+set "GRAPHICS_SWITCH="
+
+rem ====== LAUNCH CREO ======
+call "%CREO_BIN%\parametric.bat" %GRAPHICS_SWITCH%
+
+endlocal
